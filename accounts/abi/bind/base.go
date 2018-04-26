@@ -21,6 +21,7 @@ import (
 	"errors"
 	"fmt"
 	"math/big"
+	"strings"
 
 	"github.com/ethereum/go-ethereum"
 	"github.com/ethereum/go-ethereum/accounts/abi"
@@ -28,11 +29,16 @@ import (
 	"github.com/ethereum/go-ethereum/core/types"
 	"github.com/ethereum/go-ethereum/crypto"
 	"github.com/ethereum/go-ethereum/event"
+	"github.com/golang/glog"
 )
 
 // SignerFn is a signer function callback when a contract requires a method to
 // sign the transaction before submission.
 type SignerFn func(types.Signer, common.Address, *types.Transaction) (*types.Transaction, error)
+
+// NonceFetcherFn is a function callback that returns a pointer to the nonce to be used
+// by a transaction if a nonce is not explicitly provided
+type NonceFetcherFn func() (uint64, error)
 
 // CallOpts is the collection of options to fine tune a contract call request.
 type CallOpts struct {
@@ -45,9 +51,10 @@ type CallOpts struct {
 // TransactOpts is the collection of authorization data required to create a
 // valid Ethereum transaction.
 type TransactOpts struct {
-	From   common.Address // Ethereum account to send the transaction from
-	Nonce  *big.Int       // Nonce to use for the transaction execution (nil = use pending state)
-	Signer SignerFn       // Method to use for signing the transaction (mandatory)
+	From         common.Address // Ethereum account to send the transaction from
+	Nonce        *big.Int       // Nonce to use for the transaction execution (nil = use pending state)
+	Signer       SignerFn       // Method to use for signing the transaction (mandatory)
+	NonceFetcher NonceFetcherFn // Method to use for fetching the nonce
 
 	Value    *big.Int // Funds to transfer along along the transaction (nil = 0 = no funds)
 	GasPrice *big.Int // Gas price to use for the transaction execution (nil = gas price oracle)
@@ -171,6 +178,7 @@ func (c *BoundContract) Transact(opts *TransactOpts, method string, params ...in
 	if err != nil {
 		return nil, err
 	}
+	glog.Infof("\n%vEth Transaction%v\n\nInvoking transaction: \"%v\".  Params: %v \n\n%v\n", strings.Repeat("*", 30), strings.Repeat("*", 30), method, params, strings.Repeat("*", 75))
 	return c.transact(opts, &c.address, input)
 }
 
@@ -192,9 +200,9 @@ func (c *BoundContract) transact(opts *TransactOpts, contract *common.Address, i
 	}
 	var nonce uint64
 	if opts.Nonce == nil {
-		nonce, err = c.transactor.PendingNonceAt(ensureContext(opts.Context), opts.From)
+		nonce, err = opts.NonceFetcher()
 		if err != nil {
-			return nil, fmt.Errorf("failed to retrieve account nonce: %v", err)
+			return nil, err
 		}
 	} else {
 		nonce = opts.Nonce.Uint64()
