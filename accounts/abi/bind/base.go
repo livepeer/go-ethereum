@@ -202,8 +202,13 @@ func (c *BoundContract) Transact(opts *TransactOpts, method string, params ...in
 	if err != nil {
 		return nil, err
 	}
-	glog.Infof("\n%vEth Transaction%v\n\nInvoking transaction: \"%v\".  Params: %v \n\n%v\n", strings.Repeat("*", 30), strings.Repeat("*", 30), method, params, strings.Repeat("*", 75))
-	return c.transact(opts, &c.address, input)
+	tx, err := c.transact(opts, &c.address, input)
+	if err == nil {
+		glog.Infof("\n%vEth Transaction%v\n\nInvoking transaction: \"%v\".  Hash: \"%v\".  Params: %v \n\n%v\n", strings.Repeat("*", 30), strings.Repeat("*", 30), method, tx.Hash().String(), params, strings.Repeat("*", 75))
+	} else {
+		glog.Infof("\n%vEth Transaction%v\n\nInvoking transaction: \"%v\".  Hash: \"%v\".  Params: %v \nTransaction Failed: %v\n\n%v\n", strings.Repeat("*", 30), strings.Repeat("*", 30), method, tx.Hash().String(), params, err, strings.Repeat("*", 75))
+	}
+	return tx, err
 }
 
 // Transfer initiates a plain transaction to move funds to the contract, calling
