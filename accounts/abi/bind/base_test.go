@@ -23,14 +23,14 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/ethereum/go-ethereum"
-	"github.com/ethereum/go-ethereum/accounts/abi"
-	"github.com/ethereum/go-ethereum/accounts/abi/bind"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/hexutil"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/rlp"
+	"github.com/livepeer/go-ethereum"
+	"github.com/livepeer/go-ethereum/accounts/abi"
+	"github.com/livepeer/go-ethereum/accounts/abi/bind"
+	"github.com/livepeer/go-ethereum/common"
+	"github.com/livepeer/go-ethereum/common/hexutil"
+	"github.com/livepeer/go-ethereum/core/types"
+	"github.com/livepeer/go-ethereum/crypto"
+	"github.com/livepeer/go-ethereum/rlp"
 )
 
 type mockCaller struct {

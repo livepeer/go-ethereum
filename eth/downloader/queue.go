@@ -25,11 +25,11 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/prque"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/metrics"
+	"github.com/livepeer/go-ethereum/common"
+	"github.com/livepeer/go-ethereum/common/prque"
+	"github.com/livepeer/go-ethereum/core/types"
+	"github.com/livepeer/go-ethereum/log"
+	"github.com/livepeer/go-ethereum/metrics"
 )
 
 var (

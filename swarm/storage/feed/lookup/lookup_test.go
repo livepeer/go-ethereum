@@ -23,7 +23,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ethereum/go-ethereum/swarm/storage/feed/lookup"
+	"github.com/livepeer/go-ethereum/swarm/storage/feed/lookup"
 )
 
 type AlgorithmInfo struct {

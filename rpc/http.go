@@ -31,7 +31,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ethereum/go-ethereum/log"
+	"github.com/livepeer/go-ethereum/log"
 	"github.com/rs/cors"
 )
 

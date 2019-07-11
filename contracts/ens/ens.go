@@ -25,12 +25,12 @@ import (
 	"encoding/binary"
 	"strings"
 
-	"github.com/ethereum/go-ethereum/accounts/abi/bind"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/contracts/ens/contract"
-	"github.com/ethereum/go-ethereum/contracts/ens/fallback_contract"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/crypto"
+	"github.com/livepeer/go-ethereum/accounts/abi/bind"
+	"github.com/livepeer/go-ethereum/common"
+	"github.com/livepeer/go-ethereum/contracts/ens/contract"
+	"github.com/livepeer/go-ethereum/contracts/ens/fallback_contract"
+	"github.com/livepeer/go-ethereum/core/types"
+	"github.com/livepeer/go-ethereum/crypto"
 )
 
 var (

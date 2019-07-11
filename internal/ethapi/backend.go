@@ -21,17 +21,17 @@ import (
 	"context"
 	"math/big"
 
-	"github.com/ethereum/go-ethereum/accounts"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core"
-	"github.com/ethereum/go-ethereum/core/state"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/core/vm"
-	"github.com/ethereum/go-ethereum/eth/downloader"
-	"github.com/ethereum/go-ethereum/ethdb"
-	"github.com/ethereum/go-ethereum/event"
-	"github.com/ethereum/go-ethereum/params"
-	"github.com/ethereum/go-ethereum/rpc"
+	"github.com/livepeer/go-ethereum/accounts"
+	"github.com/livepeer/go-ethereum/common"
+	"github.com/livepeer/go-ethereum/core"
+	"github.com/livepeer/go-ethereum/core/state"
+	"github.com/livepeer/go-ethereum/core/types"
+	"github.com/livepeer/go-ethereum/core/vm"
+	"github.com/livepeer/go-ethereum/eth/downloader"
+	"github.com/livepeer/go-ethereum/ethdb"
+	"github.com/livepeer/go-ethereum/event"
+	"github.com/livepeer/go-ethereum/params"
+	"github.com/livepeer/go-ethereum/rpc"
 )
 
 // Backend interface provides the common API services (that are provided by

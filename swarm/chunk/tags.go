@@ -23,7 +23,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ethereum/go-ethereum/swarm/sctx"
+	"github.com/livepeer/go-ethereum/swarm/sctx"
 )
 
 // Tags hold tag information indexed by a unique random uint32

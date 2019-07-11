@@ -37,16 +37,16 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ethereum/go-ethereum/swarm/storage/feed/lookup"
+	"github.com/livepeer/go-ethereum/swarm/storage/feed/lookup"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/swarm/api"
-	"github.com/ethereum/go-ethereum/swarm/storage"
-	"github.com/ethereum/go-ethereum/swarm/storage/feed"
-	"github.com/ethereum/go-ethereum/swarm/testutil"
+	"github.com/livepeer/go-ethereum/common"
+	"github.com/livepeer/go-ethereum/core/types"
+	"github.com/livepeer/go-ethereum/crypto"
+	"github.com/livepeer/go-ethereum/log"
+	"github.com/livepeer/go-ethereum/swarm/api"
+	"github.com/livepeer/go-ethereum/swarm/storage"
+	"github.com/livepeer/go-ethereum/swarm/storage/feed"
+	"github.com/livepeer/go-ethereum/swarm/testutil"
 )
 
 func init() {

@@ -23,11 +23,11 @@ import (
 	"os"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/ethdb"
-	"github.com/ethereum/go-ethereum/ethdb/leveldb"
-	"github.com/ethereum/go-ethereum/ethdb/memorydb"
-	"github.com/ethereum/go-ethereum/log"
+	"github.com/livepeer/go-ethereum/common"
+	"github.com/livepeer/go-ethereum/ethdb"
+	"github.com/livepeer/go-ethereum/ethdb/leveldb"
+	"github.com/livepeer/go-ethereum/ethdb/memorydb"
+	"github.com/livepeer/go-ethereum/log"
 	"github.com/olekukonko/tablewriter"
 )
 

@@ -24,12 +24,12 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/hexutil"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/p2p/enode"
-	"github.com/ethereum/go-ethereum/rpc"
+	"github.com/livepeer/go-ethereum/common"
+	"github.com/livepeer/go-ethereum/common/hexutil"
+	"github.com/livepeer/go-ethereum/crypto"
+	"github.com/livepeer/go-ethereum/log"
+	"github.com/livepeer/go-ethereum/p2p/enode"
+	"github.com/livepeer/go-ethereum/rpc"
 )
 
 // List of errors

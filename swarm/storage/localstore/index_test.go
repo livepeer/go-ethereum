@@ -22,7 +22,7 @@ import (
 	"math/rand"
 	"testing"
 
-	"github.com/ethereum/go-ethereum/swarm/chunk"
+	"github.com/livepeer/go-ethereum/swarm/chunk"
 )
 
 // TestDB_pullIndex validates the ordering of keys in pull index.

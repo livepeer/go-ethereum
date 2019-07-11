@@ -27,12 +27,12 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/p2p"
-	"github.com/ethereum/go-ethereum/p2p/enode"
-	"github.com/ethereum/go-ethereum/p2p/protocols"
-	p2ptest "github.com/ethereum/go-ethereum/p2p/testing"
-	"github.com/ethereum/go-ethereum/swarm/pot"
+	"github.com/livepeer/go-ethereum/crypto"
+	"github.com/livepeer/go-ethereum/p2p"
+	"github.com/livepeer/go-ethereum/p2p/enode"
+	"github.com/livepeer/go-ethereum/p2p/protocols"
+	p2ptest "github.com/livepeer/go-ethereum/p2p/testing"
+	"github.com/livepeer/go-ethereum/swarm/pot"
 )
 
 /***

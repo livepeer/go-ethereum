@@ -19,7 +19,7 @@ package testutil
 import (
 	"testing"
 
-	"github.com/ethereum/go-ethereum/swarm/chunk"
+	"github.com/livepeer/go-ethereum/swarm/chunk"
 )
 
 // CheckTag checks the first tag in the api struct to be in a certain state

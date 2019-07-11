@@ -21,10 +21,10 @@ import (
 	"path/filepath"
 	"sync"
 
-	"github.com/ethereum/go-ethereum/p2p/enode"
-	"github.com/ethereum/go-ethereum/swarm/chunk"
-	"github.com/ethereum/go-ethereum/swarm/storage"
-	"github.com/ethereum/go-ethereum/swarm/storage/localstore"
+	"github.com/livepeer/go-ethereum/p2p/enode"
+	"github.com/livepeer/go-ethereum/swarm/chunk"
+	"github.com/livepeer/go-ethereum/swarm/storage"
+	"github.com/livepeer/go-ethereum/swarm/storage/localstore"
 )
 
 const (

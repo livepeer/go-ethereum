@@ -22,10 +22,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/ethereum/go-ethereum/metrics"
-	"github.com/ethereum/go-ethereum/swarm/log"
-	"github.com/ethereum/go-ethereum/swarm/network"
-	"github.com/ethereum/go-ethereum/swarm/storage"
+	"github.com/livepeer/go-ethereum/metrics"
+	"github.com/livepeer/go-ethereum/swarm/log"
+	"github.com/livepeer/go-ethereum/swarm/network"
+	"github.com/livepeer/go-ethereum/swarm/storage"
 )
 
 type Inspector struct {

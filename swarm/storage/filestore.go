@@ -22,8 +22,8 @@ import (
 	"sort"
 	"sync"
 
-	"github.com/ethereum/go-ethereum/swarm/chunk"
-	"github.com/ethereum/go-ethereum/swarm/storage/localstore"
+	"github.com/livepeer/go-ethereum/swarm/chunk"
+	"github.com/livepeer/go-ethereum/swarm/storage/localstore"
 )
 
 /*

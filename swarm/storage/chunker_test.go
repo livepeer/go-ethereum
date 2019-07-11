@@ -24,8 +24,8 @@ import (
 	"io"
 	"testing"
 
-	"github.com/ethereum/go-ethereum/swarm/chunk"
-	"github.com/ethereum/go-ethereum/swarm/testutil"
+	"github.com/livepeer/go-ethereum/swarm/chunk"
+	"github.com/livepeer/go-ethereum/swarm/testutil"
 	"golang.org/x/crypto/sha3"
 )
 

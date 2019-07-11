@@ -25,9 +25,9 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/ethereum/go-ethereum/swarm/chunk"
-	"github.com/ethereum/go-ethereum/swarm/storage/localstore"
-	"github.com/ethereum/go-ethereum/swarm/testutil"
+	"github.com/livepeer/go-ethereum/swarm/chunk"
+	"github.com/livepeer/go-ethereum/swarm/storage/localstore"
+	"github.com/livepeer/go-ethereum/swarm/testutil"
 )
 
 const testDataSize = 0x0001000

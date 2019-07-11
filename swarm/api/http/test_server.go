@@ -23,11 +23,11 @@ import (
 	"os"
 	"testing"
 
-	"github.com/ethereum/go-ethereum/swarm/api"
-	"github.com/ethereum/go-ethereum/swarm/chunk"
-	"github.com/ethereum/go-ethereum/swarm/storage"
-	"github.com/ethereum/go-ethereum/swarm/storage/feed"
-	"github.com/ethereum/go-ethereum/swarm/storage/localstore"
+	"github.com/livepeer/go-ethereum/swarm/api"
+	"github.com/livepeer/go-ethereum/swarm/chunk"
+	"github.com/livepeer/go-ethereum/swarm/storage"
+	"github.com/livepeer/go-ethereum/swarm/storage/feed"
+	"github.com/livepeer/go-ethereum/swarm/storage/localstore"
 )
 
 type TestServer interface {

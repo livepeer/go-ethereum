@@ -22,11 +22,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/node"
-	"github.com/ethereum/go-ethereum/p2p/simulations/adapters"
-	"github.com/ethereum/go-ethereum/swarm/network"
+	"github.com/livepeer/go-ethereum/common"
+	"github.com/livepeer/go-ethereum/log"
+	"github.com/livepeer/go-ethereum/node"
+	"github.com/livepeer/go-ethereum/p2p/simulations/adapters"
+	"github.com/livepeer/go-ethereum/swarm/network"
 )
 
 /*

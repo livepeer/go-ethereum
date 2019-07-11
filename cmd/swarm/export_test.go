@@ -32,10 +32,10 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/ethereum/go-ethereum/cmd/swarm/testdata"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/swarm"
-	"github.com/ethereum/go-ethereum/swarm/testutil"
+	"github.com/livepeer/go-ethereum/cmd/swarm/testdata"
+	"github.com/livepeer/go-ethereum/log"
+	"github.com/livepeer/go-ethereum/swarm"
+	"github.com/livepeer/go-ethereum/swarm/testutil"
 )
 
 const (

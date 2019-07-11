@@ -23,11 +23,11 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/ethereum/go-ethereum/cmd/utils"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/contracts/ens"
-	"github.com/ethereum/go-ethereum/swarm/chunk"
-	"github.com/ethereum/go-ethereum/swarm/storage"
+	"github.com/livepeer/go-ethereum/cmd/utils"
+	"github.com/livepeer/go-ethereum/common"
+	"github.com/livepeer/go-ethereum/contracts/ens"
+	"github.com/livepeer/go-ethereum/swarm/chunk"
+	"github.com/livepeer/go-ethereum/swarm/storage"
 	"gopkg.in/urfave/cli.v1"
 )
 

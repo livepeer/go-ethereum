@@ -22,12 +22,12 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/p2p"
-	"github.com/ethereum/go-ethereum/p2p/enode"
-	"github.com/ethereum/go-ethereum/p2p/protocols"
-	"github.com/ethereum/go-ethereum/swarm/pot"
+	"github.com/livepeer/go-ethereum/common"
+	"github.com/livepeer/go-ethereum/log"
+	"github.com/livepeer/go-ethereum/p2p"
+	"github.com/livepeer/go-ethereum/p2p/enode"
+	"github.com/livepeer/go-ethereum/p2p/protocols"
+	"github.com/livepeer/go-ethereum/swarm/pot"
 )
 
 func init() {

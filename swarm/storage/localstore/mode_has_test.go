@@ -20,7 +20,7 @@ import (
 	"context"
 	"testing"
 
-	"github.com/ethereum/go-ethereum/swarm/chunk"
+	"github.com/livepeer/go-ethereum/swarm/chunk"
 )
 
 // TestHas validates that Hasser is returning true for

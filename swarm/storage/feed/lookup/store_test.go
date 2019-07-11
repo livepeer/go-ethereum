@@ -11,8 +11,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ethereum/go-ethereum/swarm/log"
-	"github.com/ethereum/go-ethereum/swarm/storage/feed/lookup"
+	"github.com/livepeer/go-ethereum/swarm/log"
+	"github.com/livepeer/go-ethereum/swarm/storage/feed/lookup"
 )
 
 // Data is a struct to keep a value to store/retrieve during testing

@@ -32,11 +32,11 @@ import (
 	"strings"
 	"time"
 
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/metrics"
-	"github.com/ethereum/go-ethereum/swarm/api"
-	"github.com/ethereum/go-ethereum/swarm/api/client"
-	"github.com/ethereum/go-ethereum/swarm/spancontext"
+	"github.com/livepeer/go-ethereum/log"
+	"github.com/livepeer/go-ethereum/metrics"
+	"github.com/livepeer/go-ethereum/swarm/api"
+	"github.com/livepeer/go-ethereum/swarm/api/client"
+	"github.com/livepeer/go-ethereum/swarm/spancontext"
 	opentracing "github.com/opentracing/opentracing-go"
 	cli "gopkg.in/urfave/cli.v1"
 )

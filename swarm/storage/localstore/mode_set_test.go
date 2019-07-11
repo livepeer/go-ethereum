@@ -21,7 +21,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ethereum/go-ethereum/swarm/chunk"
+	"github.com/livepeer/go-ethereum/swarm/chunk"
 	"github.com/syndtr/goleveldb/leveldb"
 )
 

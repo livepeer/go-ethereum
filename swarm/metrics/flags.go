@@ -21,11 +21,11 @@ import (
 	"path/filepath"
 	"time"
 
-	"github.com/ethereum/go-ethereum/cmd/utils"
-	"github.com/ethereum/go-ethereum/metrics"
-	gethmetrics "github.com/ethereum/go-ethereum/metrics"
-	"github.com/ethereum/go-ethereum/metrics/influxdb"
-	"github.com/ethereum/go-ethereum/swarm/log"
+	"github.com/livepeer/go-ethereum/cmd/utils"
+	"github.com/livepeer/go-ethereum/metrics"
+	gethmetrics "github.com/livepeer/go-ethereum/metrics"
+	"github.com/livepeer/go-ethereum/metrics/influxdb"
+	"github.com/livepeer/go-ethereum/swarm/log"
 	cli "gopkg.in/urfave/cli.v1"
 )
 

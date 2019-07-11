@@ -25,12 +25,12 @@ import (
 	"sync"
 	"sync/atomic"
 
-	"github.com/ethereum/go-ethereum/swarm/chunk"
+	"github.com/livepeer/go-ethereum/swarm/chunk"
 
-	"github.com/ethereum/go-ethereum/swarm/storage/feed/lookup"
+	"github.com/livepeer/go-ethereum/swarm/storage/feed/lookup"
 
-	"github.com/ethereum/go-ethereum/swarm/log"
-	"github.com/ethereum/go-ethereum/swarm/storage"
+	"github.com/livepeer/go-ethereum/swarm/log"
+	"github.com/livepeer/go-ethereum/swarm/storage"
 )
 
 type Handler struct {

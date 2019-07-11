@@ -25,15 +25,15 @@ import (
 	"reflect"
 	"strings"
 
-	"github.com/ethereum/go-ethereum/accounts"
-	"github.com/ethereum/go-ethereum/accounts/keystore"
-	"github.com/ethereum/go-ethereum/accounts/usbwallet"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/hexutil"
-	"github.com/ethereum/go-ethereum/internal/ethapi"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/rlp"
-	"github.com/ethereum/go-ethereum/signer/storage"
+	"github.com/livepeer/go-ethereum/accounts"
+	"github.com/livepeer/go-ethereum/accounts/keystore"
+	"github.com/livepeer/go-ethereum/accounts/usbwallet"
+	"github.com/livepeer/go-ethereum/common"
+	"github.com/livepeer/go-ethereum/common/hexutil"
+	"github.com/livepeer/go-ethereum/internal/ethapi"
+	"github.com/livepeer/go-ethereum/log"
+	"github.com/livepeer/go-ethereum/rlp"
+	"github.com/livepeer/go-ethereum/signer/storage"
 )
 
 const (

@@ -20,8 +20,8 @@ import (
 	"context"
 	"time"
 
-	"github.com/ethereum/go-ethereum/metrics"
-	"github.com/ethereum/go-ethereum/swarm/chunk"
+	"github.com/livepeer/go-ethereum/metrics"
+	"github.com/livepeer/go-ethereum/swarm/chunk"
 )
 
 // Has returns true if the chunk is stored in database.

@@ -22,11 +22,11 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/rpc"
-	"github.com/ethereum/go-ethereum/swarm/storage/mock"
-	"github.com/ethereum/go-ethereum/swarm/storage/mock/db"
-	"github.com/ethereum/go-ethereum/swarm/storage/mock/mem"
+	"github.com/livepeer/go-ethereum/log"
+	"github.com/livepeer/go-ethereum/rpc"
+	"github.com/livepeer/go-ethereum/swarm/storage/mock"
+	"github.com/livepeer/go-ethereum/swarm/storage/mock/db"
+	"github.com/livepeer/go-ethereum/swarm/storage/mock/mem"
 	cli "gopkg.in/urfave/cli.v1"
 )
 

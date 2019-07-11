@@ -22,11 +22,11 @@ import (
 	"os"
 	"strings"
 
-	"github.com/ethereum/go-ethereum/internal/ethapi"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/signer/core"
-	"github.com/ethereum/go-ethereum/signer/rules/deps"
-	"github.com/ethereum/go-ethereum/signer/storage"
+	"github.com/livepeer/go-ethereum/internal/ethapi"
+	"github.com/livepeer/go-ethereum/log"
+	"github.com/livepeer/go-ethereum/signer/core"
+	"github.com/livepeer/go-ethereum/signer/rules/deps"
+	"github.com/livepeer/go-ethereum/signer/storage"
 	"github.com/robertkrimen/otto"
 )
 
